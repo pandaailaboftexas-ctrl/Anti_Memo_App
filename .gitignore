@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+env/
+.venv/
+Anti_Memo_App_Backend/Anti_Memo_App_Backend_envi/
+
+# Django
+db.sqlite3
+*.log
+staticfiles/
+media/
+
+# Frontend
+node_modules/
+dist/
+
+# Environment files
+.env
+.env.local
+.env.production
+.env.development
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
+
+# Package / installers
+*.deb
+

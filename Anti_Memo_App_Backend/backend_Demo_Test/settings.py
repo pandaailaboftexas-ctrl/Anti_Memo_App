@@ -33,11 +33,12 @@ SECRET_KEY = 'django-insecure-yyo&zpx7olso6zu(w_#w*9_zr(vpb-hn&z^5xi01m*4x$-7zkl
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '.vercel.app', 'anti-memo-backend-test-11-20-2024.onrender.com', 'anti-memo-frontend-test-11-20-2024.onrender.com']
+ALLOWED_HOSTS = ["antimemo.panda-ai-lab.us", "192.168.0.125", '127.0.0.1', 'localhost', '.vercel.app', 'anti-memo-backend-test-11-20-2024.onrender.com', 'anti-memo-frontend-test-11-20-2024.onrender.com']
 
 
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:5173',  # 允许的前端源
+    'https://antimemo.panda-ai-lab.us'
 ]
 
 CORS_ALLOW_HEADERS = [
@@ -200,5 +201,12 @@ LOGGING = {
         },
     },
 }
+
+CSRF_COOKIE_SECURE = True
+SESSION_COOKIE_SECURE = True
+
+CSRF_TRUSTED_ORIGINS = [
+    "https://antimemo.panda-ai-lab.us",
+]
 
 CHECK_POINTS = (1, 2, 4, 8, 15, 30, 60, 90, 120, 180, 240, 300, 420, 540, 660, 840, 1020, 1200)
